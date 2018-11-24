@@ -11,3 +11,16 @@ $(document).ready(function() {
 		alert("Easiest Level Of Difficulty"); 
 	});
 });
+
+// random color generator 
+
+function getRandomColor() {
+	var elements = '0123456789ABCDEF'; 
+	var color = '#'; 
+	for (var i=0; i < 6; i++)
+	{
+		color += letters[Math.random() * 16]; 
+	}
+
+	return color; 
+}
