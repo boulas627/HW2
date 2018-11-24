@@ -1,0 +1,29 @@
+h1 {
+	text-align: center;  
+	color: black; 
+	text-decoration: underline;
+	margin-top: 1.2em;
+}
+
+h2 {
+	color: red;
+	text-align: left; 
+	text-decoration: underline;
+}
+
+body {
+	margin-bottom: 1.2em; 
+	/*background-image: url("hexadecimal.png");*/
+	background-color: lightblue; 
+	opacity: 2.0; 
+}
+
+p {
+	font-style: italic;
+}
+
+img {
+	position: absolute;
+	right: 2px;
+	bottom: 2px; 
+}
