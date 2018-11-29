@@ -14,6 +14,14 @@ $(document).ready(function() {
 
 // random color generator 
 
+// set values for red, green, and blue to a certain number 
+
+// create slider that includes number
+// 	-> circle on the left will be the target color 
+// 	-> circle on the right will be the current hexadecimal color that is being displayed
+
+
+
 function getRandomColor() {
 	var elements = '0123456789ABCDEF'; 
 	var color = '#'; 
@@ -24,3 +32,4 @@ function getRandomColor() {
 
 	return color; 
 }
+
