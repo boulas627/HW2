@@ -13,11 +13,30 @@
 
 	<p>Welcome to the game Hexed!Our goal is that when you are done playing this game you will be comfortable understanding what the hexidecimal colors are.</p>
 
+	<div>The instruction for the game are as follows: </div>
+
 	<h2>Please Choose Which Difficulty You Would Like To Play On</h2>
 
-	<button type="button" id="default">Default</button>
+	<div class="slidecontainer">
+		<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+		<p></p>
+		<li>Current Hex Value: <span id="value"></span></li>
+	</div>
+
+	<script>
+		slider = document.getElementById("myRange"); 
+		output = document.getElementById("value"); 
+		output.innerHTML = slider.value; 
+
+		slider.oninput = function() {
+			output.innerHTML = this.value; 
+		}
+
+	</script>
+
+	<!-- <button type="button" id="default">Default</button>
 	<button type="button" id="easy">Easy</button>
-	<button type="button" id="hard">Difficult</button>
+	<button type="button" id="hard">Difficult</button> -->
 
 	<img src="hexadecimal.png" height="300" width="300">
 	<img src="hexadecimal_2.png" height="300" width="300" style="position: absolute; left: 2px; bottom: 2px;">
