@@ -3,26 +3,25 @@
 <head>
 	<title>Game Homepage</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
-<script type="text/javascript" src="HW2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<h1>Hexed</h1>
 
+	<p>Welcome to the game Hexed! When you are done playing this game, you will be comfortable understanding how colors can be represented in hexidecimal.</p>
 
-	<p>Welcome to the game Hexed!Our goal is that when you are done playing this game you will be comfortable understanding what the hexidecimal colors are.</p>
+	<div>The instruction for the game are as follows:</div>
 
-	<div>The instruction for the game are as follows: </div>
-
-	<h2>Please Choose Which Difficulty You Would Like To Play On</h2>
+	<h2>Please Choose Your Difficulty Level</h2>
 
 	<div class="slidecontainer">
-		<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+		<input type="range" min="0" max="10" value="5" class="slider" id="myRange">
 		<p></p>
 		<li>Current Hex Value: <span id="value"></span></li>
 	</div>
 
+    <div id="swatchcont"></div>
+    
 	<script>
 		slider = document.getElementById("myRange"); 
 		output = document.getElementById("value"); 
@@ -40,7 +39,9 @@
 
 	<img src="hexadecimal.png" height="300" width="300">
 	<img src="hexadecimal_2.png" height="300" width="300" style="position: absolute; left: 2px; bottom: 2px;">
-
+    
+    
+    <script type="text/javascript" src="HW2.js"></script>
 </body>
 
 </html>

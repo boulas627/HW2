@@ -1,3 +1,7 @@
+html {
+    background-color: lightblue;
+}
+
 h1 {
 	text-align: center;  
 	color: black; 
@@ -6,16 +10,18 @@ h1 {
 }
 
 h2 {
-	color: red;
+	color: darkred;
 	text-align: left; 
 	text-decoration: underline;
 }
 
 body {
+    margin:auto;
+    padding: 1em 3em 1em 3em;;
+    width: 1000px;
+    height: 1000px;
 	margin-bottom: 1.2em; 
-	/*background-image: url("hexadecimal.png");*/
-	background-color: lightblue; 
-	opacity: 2.0; 
+	background-color: lightgray; 
 }
 
 p {
