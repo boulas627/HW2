@@ -4,44 +4,51 @@
 	<title>Game Homepage</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
-	<h1>Hexed</h1>
+	<div id="intro">
+        <h1>Hexed</h1>
 
-	<p>Welcome to the game Hexed! When you are done playing this game, you will be comfortable understanding how colors can be represented in hexidecimal.</p>
+        <p><em>Welcome to the game Hexed! When you are done playing this game, you will be comfortable understanding how colors can be represented in hexidecimal.</em></p>
 
-	<div>The instruction for the game are as follows:</div>
+        <p>The instructions for the game are as follows:</p>
 
-	<h2>Please Choose Your Difficulty Level</h2>
+        <h2>Please Choose Your Difficulty Level</h2>
+    </div>
+    <div id="game">
+        <div class="slidecontainer">
+            <input type="range" min="0" max="10" value="5" class="slider" id="myRange">
+            <p>Difficulty Level: <span id="value"></span></p>
+        </div>
 
-	<div class="slidecontainer">
-		<input type="range" min="0" max="10" value="5" class="slider" id="myRange">
-		<p></p>
-		<li>Current Hex Value: <span id="value"></span></li>
-	</div>
+        <div id="red"></div>
+        <div id="green"></div>
+        <div id="blue"></div>
 
-    <div id="swatchcont"></div>
-    
-	<script>
-		slider = document.getElementById("myRange"); 
-		output = document.getElementById("value"); 
-		output.innerHTML = slider.value; 
+        <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+        
+        <div id="swatchcont"></div>
 
-		slider.oninput = function() {
-			output.innerHTML = this.value; 
-		}
+        <script>
+            slider = document.getElementById("myRange"); 
+            output = document.getElementById("value"); 
+            output.innerHTML = slider.value; 
 
-	</script>
+            slider.oninput = function() {
+                output.innerHTML = this.value; 
+            }
+//            $(Element).hexed(settings);
+        </script>
 
-	<!-- <button type="button" id="default">Default</button>
-	<button type="button" id="easy">Easy</button>
-	<button type="button" id="hard">Difficult</button> -->
-
-	<img src="hexadecimal.png" height="300" width="300">
-	<img src="hexadecimal_2.png" height="300" width="300" style="position: absolute; left: 2px; bottom: 2px;">
-    
+        <img src="hexadecimal.png" height="300" width="300">
+        <img src="hexadecimal_2.png" height="300" width="300" style="position: absolute; left: 2px; bottom: 2px;">
+    </div>
     
     <script type="text/javascript" src="HW2.js"></script>
+<!--    <script type="text/javascript" src="test.js"></script>-->
 </body>
 
 </html>
