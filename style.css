@@ -30,6 +30,12 @@ img {
 	bottom: 2px; 
 }
 
+button{
+    width: 150px;
+    height: 75px;
+    font-size: 30px;
+}
+
 #red, #green, #blue {
     float: left;
     clear: left;
@@ -42,6 +48,34 @@ img {
     margin-top: 18px;
     margin-left: 350px;
     background-image: none;
+}
+#swatchCompare{
+    width: 120px;
+    height: 100px;
+    margin-top: 18px;
+    margin-left: 350px;
+    background-image: none;
+    background-color: black;
+    display: none;
+}
+#swatchHex{
+    float:right;
+    display: block;
+}
+#rgb{
+    float: right;
+    display: block;
+    margin-right: 4em;
+}
+#checkit{
+    display: none;
+}
+#scoreDisplay{
+    margin: auto;
+    text-align: center;
+}
+#contain{
+    height: 300px;
 }
 
 #red .ui-slider-range { background: #ef2929; }

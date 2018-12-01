@@ -24,13 +24,25 @@
             <p>Difficulty Level: <span id="value"></span></p>
         </div>
 
+        <h1 id="scoreDisplay">No Score</h1>
+
         <div id="red"></div>
         <div id="green"></div>
         <div id="blue"></div>
 
-        <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+        <div id="contain">
+            <p id="swatchHex"></p>
+            <p id="rgb"></p>
+            <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+
+            <div id="swatchCompare" class="ui-widget-content ui-corner-all"></div>
+
+        </div>
         
-        <div id="swatchcont"></div>
+        
+
+        <button id="checkit">Check It</button>
+        <button id="start">Start</button>
 
         <script>
             slider = document.getElementById("myRange"); 
@@ -38,17 +50,21 @@
             output.innerHTML = slider.value; 
 
             slider.oninput = function() {
-                output.innerHTML = this.value; 
+                output.innerHTML = this.value;
             }
 //            $(Element).hexed(settings);
         </script>
 
-        <img src="hexadecimal.png" height="300" width="300">
-        <img src="hexadecimal_2.png" height="300" width="300" style="position: absolute; left: 2px; bottom: 2px;">
+        <!--<img src="hexadecimal.png" height="300" width="300">
+        <img src="hexadecimal_2.png" height="300" width="300" style="position: absolute; left: 2px; bottom: 2px;">-->
     </div>
     
-    <script type="text/javascript" src="HW2.js"></script>
-<!--    <script type="text/javascript" src="test.js"></script>-->
+    <!--<script type="text/javascript" src="HW2.js"></script>-->
+    <script type="text/javascript" src="jqueryplugin.js">
+    </script>
+    <script type="text/javascript">
+        $("#game").hexed();
+    </script>
 </body>
 
 </html>
